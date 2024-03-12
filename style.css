@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+body{
+    background-color: rgb(53, 49, 49);
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px white solid;
+    flex-shrink: 0;
+}
+img{
+    width: 100%;
+}
+.logo{
+    
+    display: flex;
+   align-items: center;
+   
+   margin: 5px;
+   border-radius: 10px;
+   gap: 20px;
+   text-transform: capitalize;
+}
+.name{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.menu {
+    width: 50px;
+   height: 100vh;
+background-color: rgb(100, 87, 87);
+    padding: 20px;
+    overflow: hidden ;
+    transition: .5s;
+    
+  
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+    
+    
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.5s; 
+}
+ul li a:hover{
+    background-color: #ffffff55;
+}
+ul li .logout{
+    position: absolute ;
+    bottom: 0;
+    width: 220px;
+    background-color: red;
+    
+}
+
+i{
+    font-size: 25px;
+}
