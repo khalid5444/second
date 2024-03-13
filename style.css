@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
     color: aliceblue;
+   
 }
 body{
     background-color: rgb(53, 49, 49);
+    display: flex;
+    height: 100%;
 }
 .image{
     width: 50px;
@@ -34,11 +37,12 @@ img{
 
 .menu {
     width: 65px;
-   height: 100vh;
+   
 background-color: rgb(100, 87, 87);
-    padding: 20px;
-    overflow: hidden ;
+    padding: 10px;
+  
     transition: .5s;
+    overflow: auto;
     
   
 }
@@ -48,9 +52,8 @@ background-color: rgb(100, 87, 87);
 ul{
     list-style: none;
     position: relative;
-    height: 95%;
+    height: 100%;
     overflow: hidden;
-    
     
 }
 ul li a{
@@ -65,18 +68,83 @@ ul li a{
     font-size: 20px;
     transition: 0.5s; 
 }
-ul li a:hover ,.active{
+ul li a:hover ,.active , .box:hover{
     background-color: #ffffff55;
 }
 ul li .logout{
-    position: absolute ;
-    bottom: 0;
-    width: 220px;
-    background-color: red;
-    
-    
+margin: 160px 0 0 0;
+    background-color: red;   
 }
 
 i{
     font-size: 25px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+   
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 10px;
+    padding: 5px;
+    background-color: rgb(40, 94, 245);
+    border-radius: 10px;
+}
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px ;
+}
+.box{
+    height: 150px;
+    flex-basis: 150px;
+    background-color: rgb(40, 94, 245);
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    margin: 10px;
+    border-radius: 10px;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box span{
+    font-size: 30px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+}
+th,td{
+    background-color: #123;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.price{
+    background-color: rgb(238, 222, 130);
+    color: black;
+    border-radius: 5px;
+}
+.count{
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+th{
+    background-color: rgb(40, 94, 245);
+}
+.content p{
+    font-size: 20px;
 }
